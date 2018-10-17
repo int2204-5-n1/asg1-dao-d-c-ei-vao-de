@@ -5,7 +5,7 @@
  */
 package Myteam;
 
-import de.javasoft.plaf.synthetica.SyntheticaBlackMoonLookAndFeel;
+import de.javasoft.plaf.synthetica.SyntheticaPlainLookAndFeel;
 import javax.swing.UIManager;
 
 /**
@@ -21,7 +21,7 @@ public class addbutton extends javax.swing.JFrame {
     public addbutton(Graphic g) {
         initComponents();
         setLocationRelativeTo(null);
-        
+        setTitle("Add");
         gra = g;
     }
 
@@ -141,7 +141,7 @@ public class addbutton extends javax.swing.JFrame {
         }
         try 
         {
-            UIManager.setLookAndFeel(new SyntheticaBlackMoonLookAndFeel());
+            UIManager.setLookAndFeel(new SyntheticaPlainLookAndFeel());
         } 
         catch (Exception e) 
         {

@@ -5,7 +5,7 @@
  */
 package Myteam;
 
-import de.javasoft.plaf.synthetica.SyntheticaBlackMoonLookAndFeel;
+import de.javasoft.plaf.synthetica.SyntheticaPlainLookAndFeel;
 import javax.swing.UIManager;
 
 /**
@@ -21,7 +21,7 @@ public class deleteword extends javax.swing.JFrame {
     public deleteword(Graphic g) {
         initComponents();
         setLocationRelativeTo(null);
-        
+        setTitle("Delete");
         gra = g ;
     }
 
@@ -128,7 +128,7 @@ public class deleteword extends javax.swing.JFrame {
         }
         try 
         {
-            UIManager.setLookAndFeel(new SyntheticaBlackMoonLookAndFeel());
+            UIManager.setLookAndFeel(new SyntheticaPlainLookAndFeel());
         } 
         catch (Exception e) 
         {
