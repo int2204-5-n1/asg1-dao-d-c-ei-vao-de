@@ -14,11 +14,11 @@ public class modify extends javax.swing.JFrame {
     /**
      * Creates new form modify
      */
-    MyTeam dic;
-    public modify(MyTeam d) {
+    MyTeam gra;
+    public modify(MyTeam g) {
         initComponents();
         setLocationRelativeTo(null);
-        dic = d;
+        gra = g;
     }
 
     /**
@@ -120,9 +120,9 @@ public class modify extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         // TODO add your handling code here:
         if(jTextArea2.getText().trim().equals(""))
-            dic.modify(jTextField1.getText().trim(),jTextField1.getText().trim(),"");
+            gra.modify(jTextField1.getText().trim(),jTextField1.getText().trim(),"");
         else
-            dic.modify(jTextField1.getText().trim(),jTextField3.getText().trim(),"<html><i></i><br/><ul><li><font color='#cc0000'><b> "+jTextArea2.getText().trim()+"</b></font></li></ul></html>");
+            gra.modify(jTextField1.getText().trim(),jTextField3.getText().trim(),"<html><i></i><br/><ul><li><font color='#cc0000'><b> "+jTextArea2.getText().trim()+"</b></font></li></ul></html>");
         this.setVisible(false);
     }                                        
 
