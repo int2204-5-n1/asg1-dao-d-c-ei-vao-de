@@ -431,7 +431,7 @@ public class MyTeam extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         String word = jTextField1.getText().trim();//.toLowerCase();
-        //Tim nghia cua Word
+        
         String mean;
         if(hm.containsKey(word))
         {
@@ -439,7 +439,7 @@ public class MyTeam extends javax.swing.JFrame {
         }
         else
             mean = "<html><body><font color='red'>This word doesn't exist in My Dictionary. Please search Google.com</font></body></html>";
-        //Output nghia cua Word ra 
+        
         jEditorPane.setText(mean);
         
     }                                        
