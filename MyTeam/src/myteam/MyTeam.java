@@ -589,22 +589,22 @@ public class MyTeam extends javax.swing.JFrame {
         if(swap>0) write(E_V);
         else write(V_E);
     }
-    public void modify(String w, String nw, String nm)
+    public void modify(String w, String fw, String fm)
     {
-        if (nw.equals("")){
+        if (fw.equals("")){
             delete(w);
-            add(w,nm);
+            add(w,fm);
             
         }
-        else if (nm.equals("")){
+        else if (fm.equals("")){
             String mean;
             mean = ""+hm.get(w);
             
             delete(w);
-            add(nw, mean); 
+            add(fw, mean); 
         } else{
             delete(w);
-            add(nw,nm);
+            add(fw,fm);
         }
         if(swap>0) write(E_V);
             else write(V_E); 
